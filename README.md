@@ -1,4 +1,6 @@
-# Blaisorblade Personal
+# Blaisorblade Personal Tap
+
+For my personal use — no support provided.
 
 ## How do I install these formulae?
 `brew install blaisorblade/personal/<formula>`
