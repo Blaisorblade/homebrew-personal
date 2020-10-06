@@ -55,10 +55,11 @@ class LlvmAT10003 < Formula
   end
 
   bottle do
-    cellar :any
+    root_url "https://homebrew.bintray.com/bottles/llvm-10.0.0_3.catalina.bottle.tar.gz"
     sha256 "ea9b9f579df49499d9ab0084e10edecc5350298d6c5db399a1dabc8694dab7db" => :catalina
-    sha256 "14f59a25e73e3a00fd36632f2106b41eda1b54aa1039b4b979bd957a8c041bf4" => :mojave
-    sha256 "6e09ca233790a58edae55bba453fd50179369b5514acb5f8b86156401227a75e" => :high_sierra
+    cellar :any
+    # sha256 "14f59a25e73e3a00fd36632f2106b41eda1b54aa1039b4b979bd957a8c041bf4" => :mojave
+    # sha256 "6e09ca233790a58edae55bba453fd50179369b5514acb5f8b86156401227a75e" => :high_sierra
   end
 
   # Clang cannot find system headers if Xcode CLT is not installed
