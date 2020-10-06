@@ -1,4 +1,4 @@
-class Llvm < Formula
+class LlvmAT10003 < Formula
   desc "Next-gen compiler infrastructure"
   homepage "https://llvm.org/"
   revision 3
