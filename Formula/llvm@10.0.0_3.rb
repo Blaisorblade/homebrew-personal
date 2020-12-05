@@ -80,7 +80,7 @@ class LlvmAT10003 < Formula
   # See: Homebrew/homebrew-core/issues/35513
   depends_on "cmake" => :build
   depends_on "python@3.8" => :build
-  depends_on :xcode => :build
+  depends_on xcode: :build
   depends_on "libffi"
 
   uses_from_macos "libedit"
