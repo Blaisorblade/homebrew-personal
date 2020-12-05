@@ -54,6 +54,11 @@ class LlvmAT10003 < Formula
     end
   end
 
+  # Hack taken from https://github.com/Homebrew/brew/issues/6059
+  def name
+    "llvm"
+  end
+
   bottle do
     root_url "https://homebrew.bintray.com/bottles"
     sha256 "ea9b9f579df49499d9ab0084e10edecc5350298d6c5db399a1dabc8694dab7db" => :catalina
