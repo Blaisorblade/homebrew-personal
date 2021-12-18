@@ -20,7 +20,7 @@ class UBootToolsAT202101 < Formula
     inreplace "Makefile", "undefine MK_ARCH", "unexport MK_ARCH"
 
     system "make", "sandbox_defconfig"
-    system "make", "tools", "NO_SDL=1"
+    system "make", "tools", "NO_SDL=1", "SHELL=/usr/local/bin/bash"
     bin.install "tools/mkimage"
     bin.install "tools/dumpimage"
     man1.install "doc/mkimage.1"
