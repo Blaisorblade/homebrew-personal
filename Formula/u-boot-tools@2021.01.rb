@@ -21,7 +21,7 @@ class UBootToolsAT202101 < Formula
     inreplace "Makefile", "return 42", "echo ''"
 
     system "make", "sandbox_defconfig"
-    system "make", "tools", "NO_SDL=1", "SHELL=/usr/local/bin/bash"
+    system "make", "tools", "NO_SDL=1"
     bin.install "tools/mkimage"
     bin.install "tools/dumpimage"
     man1.install "doc/mkimage.1"
