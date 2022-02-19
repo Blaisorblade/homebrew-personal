@@ -18,6 +18,7 @@ class UBootToolsAT202101 < Formula
   def install
     # Replace keyword not present in make 3.81
     inreplace "Makefile", "undefine MK_ARCH", "unexport MK_ARCH"
+    inreplace "Makefile", "return 42", "echo ''"
 
     system "make", "sandbox_defconfig"
     system "make", "tools", "NO_SDL=1", "SHELL=/usr/local/bin/bash"
